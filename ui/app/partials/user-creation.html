@@ -1,0 +1,28 @@
+<h1>New user</h1>
+	
+	 <form method="post">
+        <label for="firstName">First Name: <span class="required">*</span></label>
+        <input type="text" id="firstName" name="firstName" ng-model="firstName" placeholder="First Name" required="required" autofocus="autofocus" />
+        
+        <label for="lastName">Last Name: <span class="required">*</span></label>
+        <input type="text" id="lastName" name="lastName" ng-model="lastName" placeholder="Last Name" required="required" />		
+		
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" ng-model="email" placeholder="name@domain.com" required="required" />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="nationality">Nationality: </label>
+        <select id="nationalit" name="nationalit">
+            <option value="bolivia">Bolivia</option>
+            <option value="argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+        </select>
+		
+        <span id="loading"></span>
+        <button ng-click="newUser()"> New User</button>
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    
+	</form>
+</form>
